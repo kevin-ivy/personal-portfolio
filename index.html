@@ -8,8 +8,8 @@
 </head>
 <body>
     <!--Navigation Bar and Header-->
-    <header>
-        <h1>Kevin Ivy</h1>
+    <header id="home">
+        <a href="index.html"><h1>Kevin Ivy</h1></a>
         <!--Create Navigation Bar - Unordered List-->
         <nav>
             <ul>
@@ -26,44 +26,75 @@
                     <a href="/index.html">Resume</a>
                 </li>
             </ul>
-        </nav>
+        </nav> 
     </header>
     <!--Hero Image/Profile Picture-->
-    <section class="hero-img">
+    <section class="hero">
         <img src="assets/images/Portrait.jpg" alt="Kevin Ivy, freelance writer and future web developer"/>
         <p>
             "Fool me once, shame on you. But, teach a man to fool me and I'll be fooled for the rest of my life."
         </p>
     </section>
-    <!--About Me-->
-    <main id="about-me" class="about">
-        <h2>About Me</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum optio laborum libero illum ullam? Corporis obcaecati atque aut, sint beatae earum pariatur debitis unde vitae est, quaerat ex aperiam quia?</p>
-    </main>
-    <!--Examples of Work-->
-    <section id="my-work" class="work">
-        <h2>Work</h2>
-        <section class="run-buddy">
-            <h3>Run Buddy</h3>
-            <h4>HTML/CSS</h4>
+
+    <!--Grid for Main Sections-->
+    <section class="content-wrapper">
+        <section class="content-container">
+            <!--About Me-->
+            <main id="about-me" class="section-grid about">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="section-content">
+                    <p>My name is Kevin Ivy. I'm a full-time customer service representative, freelance writer, and future web developer. I've worked the last 10 years in customer service, working in both sales and technical support, have authored numerous fictional works, ranging from a few paragraphs to thousands of pages, and am currently learning HTML and CSS to aid my future in web development.
+                    </br>
+                    </br>
+                    When I'm not working, I like to spend time gaming with my wife of ten years, Hailey, or playing with our lovable little dachshund, Philip J. Fry.</p>
+                </div>
+            </main>
+            <!--Examples of Work-->
+            <section id="my-work" class="section-grid work">
+                <div class="section-title">
+                    <h2>My Work</h2>
+                </div>
+                <section class="section-content work-container">
+                    <section class="project-1">
+                        <h3>Run Buddy</h3>
+                        <h4>HTML/CSS</h4>
+                    </section>
+                    <section class="project-2">
+                        <h3>Coming Soon!</h3>
+                    </section>
+                    <section class="project-3">
+                        <h3>Coming Soon!</h3>
+                    </section>
+                    <section class="project-4">
+                        <h3>Coming Soon!</h3>
+                    </section>
+                    <section class="project-5">
+                        <h3>Coming Soon!</h3>
+                    </section>
+                </section>
+            </section>
+            <!--Contact Me-->
+            <section id="contact-me" class="section-grid contact">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <address>
+                    <ul>
+                        <li>
+                            512.560.0055
+                        </li>
+                        <li>
+                            <a href="mailto:kevindivy@gmail.com">kevindivy@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kevin-ivy">Github</a>
+                        </li>
+                    </ul>
+                </address>
+            </section>
         </section>
-    </section>
-    <!--Contact Me-->
-    <section id="contact-me" class="contact">
-        <h2>Contact Me</h2>
-        <address>
-            <ul>
-                <li>
-                    512.560.0055
-                </li>
-                <li>
-                    <a href="mailto:kevindivy@gmail.com">kevindivy@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://github.com/kevin-ivy">Github</a>
-                </li>
-            </ul>
-        </address>
     </section>
 </body>
 </html>

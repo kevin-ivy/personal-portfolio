@@ -5,6 +5,7 @@
     --heavytxt: #373640;
     --thumbnail-bg: #9ecacc;
     --header-bg: #32363c;
+    --grid-padding: 25px 0px 15px 5px;
 }
 
 * {
@@ -26,6 +27,15 @@ header {
     padding: 15px 0px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header a {
+    text-decoration: none;
 }
 
 header h1 {
@@ -38,10 +48,10 @@ header h1 {
 
 header nav {
     margin: 7px 0;
+    padding: 0 20px;
 }
 
 header nav ul {
-    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -70,7 +80,7 @@ header nav ul li a:hover {
 }
 /* Set up Style for Hero Image and Quote */
 
-.hero-img {
+.hero {
     background-image: url(../images/herobg.png);
     background-size: cover;
     display: flex;
@@ -79,12 +89,12 @@ header nav ul li a:hover {
     overflow: hidden;
 }
 
-.hero-img img {
+.hero img {
     padding: 10px;
     max-width: 25%;
 }
 
-.hero-img p {
+.hero p {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 2em;
@@ -96,6 +106,73 @@ header nav ul li a:hover {
     transition: 1s;
 }
 
-.hero-img:hover p {
+.hero:hover p {
     top: 0px;
+}
+
+/* Begin Styles for Grids and Grid Containers */
+
+.content-container {
+    display: grid;
+    grid-template-rows: repeat(2,1fr) 0.6fr;
+}
+
+.section-grid {
+    padding: var(--grid-padding);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.section-title {
+    display: flex;
+    justify-content: flex-end;
+    border-right: 3px solid;
+}
+
+.section-title h2 {
+    padding: 0px 10px;
+    text-align: right;
+    font-size: 2em;
+}
+
+.section-content {
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+
+/* Begin Style for About Me Section */
+
+.about p::first-letter {
+    font-size: 1.5em;
+}
+
+/* Begin style for My Work Section */
+
+
+/* Begin Style for Contact Section */
+
+.contact address {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contact address ul {
+    list-style: none;
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact address ul li {
+    display: flex;
+    margin: 0 18px;
+    padding-bottom: 2px;
+    border-bottom: 3px solid;
+}
+
+.contact address ul li a {
+    text-decoration: none;
 }
