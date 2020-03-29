@@ -1,0 +1,100 @@
+:root {
+    --bg-color: #eeeefc;
+    --txt-color: #445a78;
+    --litetxt: #9ecacc;
+    --heavytxt: #373640;
+    --thumbnail-bg: #9ecacc;
+    --header-bg: #32363c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Set up style for header and navigation */
+
+header {
+    background-color: var(--header-bg);
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding: 0 40px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: var(--thumbnail-bg);
+    color: var(--heavytxt);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header ul li {
+    padding: 0 5px;
+}
+
+header nav ul li a {
+    padding: 5px 10px;
+    font-weight: lighter;
+    color: var(--litetxt);
+    text-decoration: none;
+    border-bottom: 3px solid;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--thumbnail-bg);
+    color: var(--heavytxt);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* Set up Style for Hero Image and Quote */
+
+.hero-img {
+    background-image: url(../images/herobg.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img img {
+    max-width: 25%;
+}
+
+.hero-img p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    color: var(--litetxt);
+    top: 500px;
+    position: relative;
+    transition: 1s;
+}
+
+.hero-img:hover p {
+    top: 0px;
+}
