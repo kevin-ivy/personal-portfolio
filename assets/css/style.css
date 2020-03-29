@@ -80,6 +80,7 @@ header nav ul li a:hover {
 }
 
 .hero-img img {
+    padding: 10px;
     max-width: 25%;
 }
 
