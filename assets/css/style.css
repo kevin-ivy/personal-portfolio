@@ -276,14 +276,23 @@ section.project-name {
 /* Set up @Media for different viewports */
 
 /*Tablet Compatibility */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
 
     /* Adjust Header for Tablet */
    header {
        padding: 0;
        justify-content: center;
+       align-items: center;
        position: relative;
    } 
+
+   header nav ul li {
+       font-size: 1.5em;
+   }
+
+   header nav ul li a {
+    text-shadow: none;
+    }
 
    /* Adjust Hero for Tablet */
 
@@ -294,11 +303,9 @@ section.project-name {
    }
 
    /* Adjust content container */
-
-
    .content-wrapper {
        display: block;
-       margin: 0 40px;
+       margin: 0 auto;
        width: 100%;
    }
 
@@ -308,6 +315,10 @@ section.project-name {
 
    .section-grid {
        display: block;
+   }
+
+   .hero {
+       padding: 24px;
    }
 
    /* Adjust About Section */
@@ -344,7 +355,7 @@ section.project-name {
 }
 
 /* Mobile Phone Compatibility */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 824px) {
     
     /* Adjust Header Compatibility */
     header h1 {
@@ -362,7 +373,7 @@ section.project-name {
     }
 
     header nav ul li a {
-        font-size: 0.7em;
+        font-size: 0.5em;
         margin-bottom: 3px;
         text-shadow: none;
     }
@@ -385,13 +396,17 @@ section.project-name {
         opacity: 1;
         font-size: 0.9em;
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
     }
 
     /* Adjust About Section */
 
     .content-wrapper {
         width: 85%;
+    }
+
+    .content-container {
+        width: 100%;
     }
 
     .section-grid {
