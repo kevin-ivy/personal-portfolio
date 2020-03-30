@@ -240,7 +240,6 @@ section.project-name {
     padding: 5px 15px;
     margin-bottom: 10px;
     position: relative;
-    transition: 1.2s;
     z-index: 500;
 }
 
