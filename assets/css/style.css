@@ -27,6 +27,7 @@ header {
     background-image: url("../images/herobg.png");
     background-size: cover;
     background-attachment: fixed;
+    background-position: 80%;
     padding: 15px 0px;
     display: flex;
     justify-content: space-between;
@@ -85,6 +86,8 @@ header nav ul li a:hover {
 .hero {
     background-image: url(../images/herobg.png);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     align-items: center;
     position: relative;
@@ -268,4 +271,149 @@ section.project-name {
 .contact address ul li a {
     color: var(--txt-color);
     text-decoration: none;
+}
+
+/* Set up @Media for different viewports */
+
+/*Tablet Compatibility */
+@media screen and (max-width: 980px) {
+
+    /* Adjust Header for Tablet */
+   header {
+       padding: 0;
+       justify-content: center;
+       position: relative;
+   } 
+
+   /* Adjust Hero for Tablet */
+
+   .hero p {
+       font-size: 1.25em;
+       transition: 0s;
+       opacity: 1;
+   }
+
+   /* Adjust content container */
+
+
+   .content-wrapper {
+       display: block;
+       margin: 0 40px;
+       width: 100%;
+   }
+
+   .content-container {
+       display: block;
+   }
+
+   .section-grid {
+       display: block;
+   }
+
+   /* Adjust About Section */
+
+   .section-title {
+       justify-content: center;
+       border-right: none;
+       border-bottom: 3px solid var(--txt-color);
+   }
+
+   .section-content {
+       margin: 10px 0;
+   }
+
+   /* Adjust My Work Section */
+
+   .work-container {
+       width: 100%;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   /* Adjust Contact Me Section */
+   .contact address {
+       justify-content: space-around;
+   }
+
+   .contact address ul {
+       margin: 15px 0;
+   }
+
+   .contact address ul li {
+       margin: 0 15px;
+   }
+}
+
+/* Mobile Phone Compatibility */
+@media screen and (max-width: 768px) {
+    
+    /* Adjust Header Compatibility */
+    header h1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    header nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li {
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 0.7em;
+        margin-bottom: 3px;
+    }
+
+    /* Adjust Hero Compatibility */
+    .hero {
+        Display: block;
+        padding: 0 12px;
+        text-align: left;
+    }
+
+    .hero img {
+        display: block;
+        margin: 0 auto;
+        max-width: 60%;
+    }    
+
+    .hero p {
+        padding: 0;
+        opacity: 1;
+        font-size: 0.9em;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    /* Adjust About Section */
+
+    .content-wrapper {
+        width: 85%;
+    }
+
+    .section-grid {
+        padding: 0;
+        margin: 30px 0 30px 0;
+    }
+
+    .section-content {
+        font-size: 0.75em;
+        text-align: justify;
+    }
+
+    /* Adjust Contact Me Section */
+
+    .contact address ul {
+        display: block;
+        text-align: center;
+    }
+
+    .contact address ul li {
+        border: none;
+        margin: 8px 0;
+        text-decoration: underline;
+    }
+
 }
