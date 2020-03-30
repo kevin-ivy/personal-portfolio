@@ -24,7 +24,7 @@ body {
 /* Set up style for header and navigation */
 
 header {
-    background: url("../images/herobg.png");
+    background: url("images/herobg.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
