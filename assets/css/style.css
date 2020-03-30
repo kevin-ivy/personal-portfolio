@@ -45,8 +45,7 @@ header h1 {
     padding: 0 40px;
     font-size: 36px;
     font-weight: bold;
-    background-color: var(--thumbnail-bg);
-    color: var(--heavytxt);
+    color: var(--litetxt);
 }
 
 header nav {
@@ -63,15 +62,15 @@ header nav ul {
 }
 
 header ul li {
-    padding: 0 5px;
+    padding: 0 6px;
 }
 
 header nav ul li a {
     padding: 5px 10px;
+    font-size: 1.55vw;
     font-weight: bold;
     color: var(--litetxt);
     text-decoration: none;
-    border-bottom: 3px solid;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -95,6 +94,7 @@ header nav ul li a:hover {
 .hero img {
     padding: 10px;
     max-width: 20%;
+    border-radius: 40px;
 }
 
 .hero p {
@@ -183,7 +183,7 @@ header nav ul li a:hover {
 .work-img {
     min-height: 125px;
     background-size: cover;
-    border: 3px solid var(--litetxt);
+    border: 3px solid var(--header-bg);
     display: flex;
     align-items: flex-end;
     position: relative;
