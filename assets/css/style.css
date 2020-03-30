@@ -359,12 +359,12 @@ section.project-name {
 
     header nav ul li {
         padding: 0;
-        text-shadow: none;
     }
 
     header nav ul li a {
         font-size: 0.7em;
         margin-bottom: 3px;
+        text-shadow: none;
     }
 
     /* Adjust Hero Compatibility */
